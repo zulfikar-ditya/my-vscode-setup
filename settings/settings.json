@@ -1,0 +1,161 @@
+{
+	"workbench.startupEditor": "newUntitledFile",
+	"files.autoSave": "onFocusChange",
+	"git.suggestSmartCommit": false,
+	"explorer.confirmDragAndDrop": false,
+	"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+	"terminal.integrated.smoothScrolling": true,
+	"git.confirmSync": false,
+	"workbench.sideBar.location": "left",
+	"php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+	"php-cs-fixer.lastDownload": 1665652561093,
+	"editor.mouseWheelZoom": true,
+	"editor.fontFamily": "'Fira Code', 'Consolas', 'Ubuntu Mono', 'monospace', monospace",
+	"editor.fontLigatures": true,
+	"stories.username": "Hildegarde_troubled",
+	"[django-html]": {
+		"editor.quickSuggestions": {
+			"other": false,
+			"comments": false,
+			"strings": false
+		}
+	},
+	"editor.stickyScroll.enabled": true,
+	"editor.cursorSmoothCaretAnimation": true,
+	"prettier.trailingComma": "all",
+	"prettier.useTabs": true,
+	"prettier.vueIndentScriptAndStyle": true,
+	"prettier.endOfLine": "auto",
+	"editor.cursorSurroundingLinesStyle": "all",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"html.format.endWithNewline": true,
+	"html.format.maxPreserveNewLines": -1,
+	"html.format.templating": false,
+	"beautify.ignore": "",
+	"html.format.enable": false,
+	"pasteAndIndent.selectAfter": true,
+	"liveServer.settings.donotVerifyTags": true,
+	"tabnine.experimentalAutoImports": true,
+	"editor.autoClosingQuotes": "always",
+	"editor.autoClosingBrackets": "always",
+	"editor.renderLineHighlightOnlyWhenFocus": true,
+	"editor.tabCompletion": "on",
+	"editor.autoClosingOvertype": "always",
+	"editor.formatOnPaste": true,
+	"editor.linkedEditing": true,
+	"editor.suggest.preview": true,
+	"editor.codeActionsOnSave": {},
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	},
+	"zenMode.hideLineNumbers": false,
+	"workbench.editorAssociations": {
+		"*.xlsx": "default"
+	},
+	"terminal.integrated.cursorStyle": "underline",
+	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"editor.formatOnSave": true,
+	"editor.autoClosingDelete": "always",
+	"editor.bracketPairColorization.enabled": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"settingsSync.ignoredSettings": ["-emmet.extensionsPath"],
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"bracketPairColorizer.depreciation-notice": false,
+	"editor.guides.bracketPairs": "active",
+	"editor.smoothScrolling": true,
+	"editor.cursorBlinking": "expand",
+	"workbench.preferredDarkColorTheme": "Tokyo Night",
+	"terminal.integrated.enableBell": true,
+	"explorer.confirmDelete": false,
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true
+	},
+	"[blade]": {
+		"editor.defaultFormatter": "shufo.vscode-blade-formatter",
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true
+	},
+	"[php]": {
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true
+	},
+	"[html": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true
+	},
+	"blade.format.enable": true,
+	"bladeFormatter.format.useTabs": false,
+	"bladeFormatter.format.enabled": true,
+	"bladeFormatter.format.wrapLineLength": 1200,
+	"bladeFormatter.format.noMultipleEmptyLines": true,
+	"bladeFormatter.format.wrapAttributes": "aligned-multiple",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.colorTheme": "Cobalt2",
+	"php.suggest.basic": true,
+	"php.validate.enable": true,
+	"intelephense.rename.namespaceMode": "all",
+	"php.memoryLimit": "4095M",
+	"intelephense.phpdoc.classTemplate": {
+		"summary": "$1",
+		"tags": ["@package ${1:$SYMBOL_NAMESPACE}"]
+	},
+	"intelephense.phpdoc.functionTemplate": {
+		"summary": "$1",
+		"tags": [
+			"@param ${1:$SYMBOL_TYPE} $SYMBOL_NAME $2",
+			"@return ${1:$SYMBOL_TYPE} $2",
+			"@throws ${1:$SYMBOL_TYPE} $2"
+		]
+	},
+	"php-cs-fixer.executablePathWindows": "${extensionPath}\\php-cs-fixer.phar",
+	"php-cs-fixer.onsave": true,
+	"php-cs-fixer.rules": "@PSR12",
+	"php-cs-fixer.config": ".php-cs-fixer.php;.php-cs-fixer.dist.php;.php_cs;.php_cs.dist",
+	"php-cs-fixer.allowRisky": false,
+	"php-cs-fixer.pathMode": "override",
+	"php-cs-fixer.exclude": [],
+	"php-cs-fixer.autoFixByBracket": true,
+	"php-cs-fixer.autoFixBySemicolon": false,
+	"php-cs-fixer.formatHtml": false,
+	"php-cs-fixer.documentFormattingProvider": true,
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"zenMode.hideActivityBar": false,
+	"zenMode.hideStatusBar": false,
+	"bladeFormatter.format.indentSize": 4,
+	"editor.inlineSuggest.enabled": true,
+	"workbench.editor.untitled.hint": "hidden",
+	"githubIssues.queries": [
+		{
+			"label": "My Issues",
+			"query": "default"
+		},
+		{
+			"label": "Created Issues",
+			"query": "author:${user} state:open repo:${owner}/${repository} sort:created-desc"
+		},
+		{
+			"label": "Recent Issues",
+			"query": "state:open repo:${owner}/${repository} sort:updated-desc"
+		}
+	],
+	"window.zoomLevel": -1
+}
