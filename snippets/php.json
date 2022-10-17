@@ -62,6 +62,182 @@
 		],
 		"description": "Private function"
 	},
+	"__construct": {
+		"prefix": "__const",
+		"body": [
+			"/**",
+			" * initial",
+			" * ",
+			" * @param ${1:arguments}",
+			" * @return ${2:arguments}",
+			" */",
+			"public function __construct(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Constructor function"
+	},
+	"__destruct": {
+		"prefix": "__destruct",
+		"body": [
+			"/**",
+			" * destructor",
+			" * ",
+			" * @param ${1:arguments}",
+			" * @return ${2:arguments}",
+			" */",
+			"public function __destruct(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Destructor function"
+	},
+	"public function get ": {
+		"prefix": "pubfuncget",
+		"body": [
+			"/**",
+			" * get property ${1:property}",
+			" * ",
+			" * @param ${1:arguments}",
+			" * @return ${2:arguments}",
+			" */",
+			"public function get${1:property}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "public function getter"
+	},
+	"public function set ": {
+		"prefix": "pubfuncset",
+		"body": [
+			"/**",
+			" * set property ${1:property}",
+			" * ",
+			" * @param ${1:arguments}",
+			" * @return ${2:arguments}",
+			" */",
+			"public function set${1:property}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "public function setter"
+	},
+	"private function get ": {
+		"prefix": "prifuncget",
+		"body": [
+			"/**",
+			" * get property ${1:property}",
+			" * ",
+			" * @param ${1:arguments}",
+			" * @return ${2:arguments}",
+			" */",
+			"private function get${1:property}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Private function getter"
+	},
+	"private function set ": {
+		"prefix": "prifuncset",
+		"body": [
+			"/**",
+			" * set property ${1:property}",
+			" * ",
+			" * @param ${1:arguments}",
+			" * @return ${2:arguments}",
+			" */",
+			"private function set${1:property}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Private function setter"
+	},
+	"protected function get ": {
+		"prefix": "profuncget",
+		"body": [
+			"/**",
+			" * get property ${1:property}",
+			" * ",
+			" * @param ${1:arguments}",
+			" * @return ${2:arguments}",
+			" */",
+			"protected function get${1:property}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Protected function getter"
+	},
+	"protected function set ": {
+		"prefix": "profuncset",
+		"body": [
+			"/**",
+			" * set property ${1:property}",
+			" * ",
+			" * @param ${1:arguments}",
+			" * @return ${2:arguments}",
+			" */",
+			"protected function set${1:property}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Protected function setter"
+	},
+	"protected static function ": {
+		"prefix": "profuncstatic",
+		"body": [
+			"/**",
+			" * ${1:function_name}",
+			" * ",
+			" * @param ${1:arguments}",
+			" * @return ${2:arguments}",
+			" */",
+			"protected static function ${1:function_name}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Protected static function"
+	},
+	"public static function ": {
+		"prefix": "pubfuncstatic",
+		"body": [
+			"/**",
+			" * ${1:function_name}",
+			" * ",
+			" * @param ${1:arguments}",
+			" * @return ${2:arguments}",
+			" */",
+			"public static function ${1:function_name}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Public static function"
+	},
+	"private static function ": {
+		"prefix": "prifuncstatic",
+		"body": [
+			"/**",
+			" * ${1:function_name}",
+			" * ",
+			" * @param ${1:arguments}",
+			" * @return ${2:arguments}",
+			" */",
+			"private static function ${1:function_name}(${2:arguments})",
+			"{",
+			"\t${3:// body}",
+			"}"
+		],
+		"description": "Private static function"
+	},
 	"anonymous function": {
 		"prefix": "anofunc",
 		"body": ["function (${1:arguments}) {", "\t${2:// body}", "}"],
@@ -71,6 +247,298 @@
 		"prefix": "infunc",
 		"body": ["fn (${1:arguments}) => ${2:code}"],
 		"description": "Arrow function"
-	}
+	},
 	// * / END FUNCTION PHP =================================================================================================================
+
+	// * VARIABLE =================================================================================================================
+	"variable string": {
+		"prefix": "varstr",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var string",
+			"*/",
+			"$${1:variable_name} = \"${2:value}\";"
+		],
+		"description": "Variable string"
+	},
+	"variable int": {
+		"prefix": "varint",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var int",
+			"*/",
+			"$${1:variable_name} = ${2:value};"
+		],
+		"description": "Variable int"
+	},
+	"variable boolean": {
+		"prefix": "varbool",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var boolean",
+			"*/",
+			"$${1:variable_name} = ${2:true};"
+		],
+		"description": "Variable boolean"
+	},
+	"variable float": {
+		"prefix": "varfloat",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var float",
+			"*/",
+			"$${1:variable_name} = ${2:0.0};"
+		],
+		"description": "Variable float"
+	},
+	"variable array": {
+		"prefix": "vararr",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var array",
+			"*/",
+			"$${1:variable_name} = [${2:values}];"
+		],
+		"description": "Variable array"
+	},
+	"variable object": {
+		"prefix": "varobj",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var object",
+			"*/",
+			"{1:variable_name} = {${2:values}};"
+		],
+		"description": "Variable array"
+	},
+
+	"public variable string": {
+		"prefix": "pubvarstr",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var string",
+			"*/",
+			"public $${1:variable_name} = \"${2:value}\";"
+		],
+		"description": "Public variable string"
+	},
+	"public variable int": {
+		"prefix": "pubvarint",
+		"body": [
+			"/**",
+			"*",
+			"* 1",
+			"* @var int",
+			"*/",
+			"public $${1:variable_name} = ${2:value};"
+		],
+		"description": "Public variable int"
+	},
+	"public variable boolean": {
+		"prefix": "pubvarbool",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var boolean",
+			"*/",
+			"public $${1:variable_name} = ${2:true};"
+		],
+		"description": "Public variable boolean"
+	},
+	"public variable float": {
+		"prefix": "pubvarfloat",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var float",
+			"*/",
+			"public $${1:variable_name} = ${2:0.0};"
+		],
+		"description": "Public variable float"
+	},
+	"public variable array": {
+		"prefix": "pubvararr",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var array",
+			"*/",
+			"public $${1:variable_name} = [${2:values}];"
+		],
+		"description": "Public variable array"
+	},
+	"public variable object": {
+		"prefix": "pubvarobj",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var object",
+			"*/",
+			"public $${1:variable_name} = {${2:values}};"
+		],
+		"description": "Public variable array"
+	},
+	"private variable string": {
+		"prefix": "privarstr",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var string",
+			"*/",
+			"private $${1:variable_name} = \"${2:value}\";"
+		],
+		"description": "private variable string"
+	},
+	"private variable int": {
+		"prefix": "privarint",
+		"body": [
+			"/**",
+			"*",
+			"* $${",
+			"* @var int",
+			"*/",
+			"private $${1:variable_name} = ${2:value};"
+		],
+		"description": "private variable int"
+	},
+	"private variable boolean": {
+		"prefix": "privarbool",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var boolean",
+			"*/",
+			"private $${1:variable_name} = ${2:true};"
+		],
+		"description": "private variable boolean"
+	},
+	"private variable float": {
+		"prefix": "privarfloat",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var float",
+			"*/",
+			"private $${1:variable_name} = ${2:0.0};"
+		],
+		"description": "private variable float"
+	},
+	"private variable array": {
+		"prefix": "privararr",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var array",
+			"*/",
+			"private $${1:variable_name} = [${2:values}];"
+		],
+		"description": "private variable array"
+	},
+	"private variable object": {
+		"prefix": "privarobj",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var object",
+			"*/",
+			"private $${1:variable_name} = {${2:values}};"
+		],
+		"description": "private variable array"
+	},
+	"protected variable string": {
+		"prefix": "provarstr",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var variable",
+			"*/",
+			"protected $${1:variable_name} = \"${2:value}\";"
+		],
+		"description": "Protected variable string"
+	},
+	"protected variable int": {
+		"prefix": "provarint",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var variable",
+			"*/",
+			"protected $${1:variable_name} = ${2:value};"
+		],
+		"description": "Protected variable int"
+	},
+	"protected variable boolean": {
+		"prefix": "provarbool",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var variable",
+			"*/",
+			"protected $${1:variable_name} = ${2:true};"
+		],
+		"description": "Protected variable boolean"
+	},
+	"protected variable float": {
+		"prefix": "provarfloat",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var variable",
+			"*/",
+			"protected $${1:variable_name} = ${2:0.0};"
+		],
+		"description": "Protected variable float"
+	},
+	"protected variable array": {
+		"prefix": "provararr",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var variable",
+			"*/",
+			"protected $${1:variable_name} = [${2:values}];"
+		],
+		"description": "Protected variable array"
+	},
+	"protected variable object": {
+		"prefix": "provarobj",
+		"body": [
+			"/**",
+			"*",
+			"* variable_name",
+			"* @var variable",
+			"*/",
+			"protected $${1:variable_name} = {${2:values}};"
+		],
+		"description": "Protected variable array"
+	}
+	// * / VARIABLE =================================================================================================================
 }
