@@ -20,8 +20,8 @@
 			"/**",
 			" * ${1:function_name} ",
 			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * @param ${2:arguments}",
+			" * @return mixed",
 			" */",
 			"public function ${1:function_name}(${2:arguments})",
 			"{",
@@ -255,10 +255,10 @@
 		"prefix": "varstr",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var string",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var string",
+			" */",
 			"$${1:variable_name} = \"${2:value}\";"
 		],
 		"description": "Variable string"
@@ -267,10 +267,10 @@
 		"prefix": "varint",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var int",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var int",
+			" */",
 			"$${1:variable_name} = ${2:value};"
 		],
 		"description": "Variable int"
@@ -279,10 +279,10 @@
 		"prefix": "varbool",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var boolean",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var boolean",
+			" */",
 			"$${1:variable_name} = ${2:true};"
 		],
 		"description": "Variable boolean"
@@ -291,10 +291,10 @@
 		"prefix": "varfloat",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var float",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var float",
+			" */",
 			"$${1:variable_name} = ${2:0.0};"
 		],
 		"description": "Variable float"
@@ -303,10 +303,10 @@
 		"prefix": "vararr",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var array",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var array",
+			" */",
 			"$${1:variable_name} = [${2:values}];"
 		],
 		"description": "Variable array"
@@ -315,10 +315,10 @@
 		"prefix": "varobj",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var object",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var object",
+			" */",
 			"{1:variable_name} = {${2:values}};"
 		],
 		"description": "Variable array"
@@ -328,10 +328,10 @@
 		"prefix": "pubvarstr",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var string",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var string",
+			" */",
 			"public $${1:variable_name} = \"${2:value}\";"
 		],
 		"description": "Public variable string"
@@ -340,10 +340,10 @@
 		"prefix": "pubvarint",
 		"body": [
 			"/**",
-			"*",
-			"* 1",
-			"* @var int",
-			"*/",
+			" *",
+			" * 1",
+			" * @var int",
+			" */",
 			"public $${1:variable_name} = ${2:value};"
 		],
 		"description": "Public variable int"
@@ -352,10 +352,10 @@
 		"prefix": "pubvarbool",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var boolean",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var boolean",
+			" */",
 			"public $${1:variable_name} = ${2:true};"
 		],
 		"description": "Public variable boolean"
@@ -364,10 +364,10 @@
 		"prefix": "pubvarfloat",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var float",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var float",
+			" */",
 			"public $${1:variable_name} = ${2:0.0};"
 		],
 		"description": "Public variable float"
@@ -376,10 +376,10 @@
 		"prefix": "pubvararr",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var array",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var array",
+			" */",
 			"public $${1:variable_name} = [${2:values}];"
 		],
 		"description": "Public variable array"
@@ -388,10 +388,10 @@
 		"prefix": "pubvarobj",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var object",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var object",
+			" */",
 			"public $${1:variable_name} = {${2:values}};"
 		],
 		"description": "Public variable array"
@@ -400,10 +400,10 @@
 		"prefix": "privarstr",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var string",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var string",
+			" */",
 			"private $${1:variable_name} = \"${2:value}\";"
 		],
 		"description": "private variable string"
@@ -412,10 +412,10 @@
 		"prefix": "privarint",
 		"body": [
 			"/**",
-			"*",
-			"* $${",
-			"* @var int",
-			"*/",
+			" *",
+			" * $${",
+			" * @var int",
+			" */",
 			"private $${1:variable_name} = ${2:value};"
 		],
 		"description": "private variable int"
@@ -424,10 +424,10 @@
 		"prefix": "privarbool",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var boolean",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var boolean",
+			" */",
 			"private $${1:variable_name} = ${2:true};"
 		],
 		"description": "private variable boolean"
@@ -436,10 +436,10 @@
 		"prefix": "privarfloat",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var float",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var float",
+			" */",
 			"private $${1:variable_name} = ${2:0.0};"
 		],
 		"description": "private variable float"
@@ -448,10 +448,10 @@
 		"prefix": "privararr",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var array",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var array",
+			" */",
 			"private $${1:variable_name} = [${2:values}];"
 		],
 		"description": "private variable array"
@@ -460,10 +460,10 @@
 		"prefix": "privarobj",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var object",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var object",
+			" */",
 			"private $${1:variable_name} = {${2:values}};"
 		],
 		"description": "private variable array"
@@ -472,10 +472,10 @@
 		"prefix": "provarstr",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var variable",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var variable",
+			" */",
 			"protected $${1:variable_name} = \"${2:value}\";"
 		],
 		"description": "Protected variable string"
@@ -484,10 +484,10 @@
 		"prefix": "provarint",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var variable",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var variable",
+			" */",
 			"protected $${1:variable_name} = ${2:value};"
 		],
 		"description": "Protected variable int"
@@ -496,10 +496,10 @@
 		"prefix": "provarbool",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var variable",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var variable",
+			" */",
 			"protected $${1:variable_name} = ${2:true};"
 		],
 		"description": "Protected variable boolean"
@@ -508,10 +508,10 @@
 		"prefix": "provarfloat",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var variable",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var variable",
+			" */",
 			"protected $${1:variable_name} = ${2:0.0};"
 		],
 		"description": "Protected variable float"
@@ -520,10 +520,10 @@
 		"prefix": "provararr",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var variable",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var variable",
+			" */",
 			"protected $${1:variable_name} = [${2:values}];"
 		],
 		"description": "Protected variable array"
@@ -532,13 +532,283 @@
 		"prefix": "provarobj",
 		"body": [
 			"/**",
-			"*",
-			"* variable_name",
-			"* @var variable",
-			"*/",
+			" *",
+			" * variable_name",
+			" * @var variable",
+			" */",
 			"protected $${1:variable_name} = {${2:values}};"
 		],
 		"description": "Protected variable array"
-	}
+	},
 	// * / VARIABLE =================================================================================================================
+
+	// * LARAVEL =================================================================================================================
+	// ! LARAVEL MODEL =================================================================================================================
+
+	"The table associated with the model": {
+		"prefix": "modeltablename",
+		"body": [
+			"/**",
+			" * The table associated with the model.",
+			" *",
+			" * @var string",
+			" */",
+			"protected \\$table = \"${1:table_names}\";"
+		],
+		"description": "Function the table associated with the model"
+	},
+
+	"The primary key associated with the table.": {
+		"prefix": "modelid",
+		"body": [
+			"/**",
+			" * The primary key associated with the table.",
+			" *",
+			" * @var string",
+			" */",
+			"protected \\$primaryKey = \"${1:table_id}\";"
+		],
+		"description": "Function the primary key associated with the table."
+	},
+	"The model's default values for attributes.": {
+		"prefix": "modelattr",
+		"body": [
+			"/**",
+			" * The model's default values for attributes.",
+			" *",
+			" * @var array",
+			" */",
+			"protected \\$attributes = [$1];"
+		],
+		"description": "Function the model's default values for attributes."
+	},
+	"The attributes that are mass assignable.": {
+		"prefix": "modelfillable",
+		"body": [
+			"/**",
+			" * The attributes that are mass assignable.",
+			" *",
+			" * @var array",
+			" */",
+			"protected \\$fillable = [$1];"
+		],
+		"description": "Function the attributes that are mass assignable."
+	},
+	"The \"booted\" method of the model.": {
+		"prefix": "modelboot",
+		"body": [
+			"/**",
+			" * The \"booted\" method of the model.",
+			" *",
+			" * @return void",
+			" */",
+			"protected function booted()",
+			"{",
+			"\t// code$1",
+			"}"
+		],
+		"description": "Function the \"booted\" method of the model."
+	},
+	"Apply the scope to a given Eloquent query builder": {
+		"prefix": "modelscope",
+		"body": [
+			"/**",
+			" * Apply the scope to a given Eloquent query builder.",
+			" *",
+			" * @param  \\Illuminate\\Database\\Eloquent\\Builder  $builder",
+			" * @param  \\Illuminate\\Database\\Eloquent\\Model  $model",
+			" * @return void",
+			" */",
+			"public function apply(Builder $builder, Model $model)",
+			"{",
+			"\t\\$builder->where('${1:column_name}', '${2:condition}', '${3:value}');",
+			"}"
+		],
+		"description": "Function Apply the scope to a given Eloquent query builder"
+	},
+	"Apply the scope to a given column Eloquent query builder": {
+		"prefix": "modellocalscope",
+		"body": [
+			"/**",
+			" * Scope a query to only include ${1:column_name} data.",
+			" *",
+			" * @param  \\Illuminate\\Database\\Eloquent\\Builder  $query",
+			" * @return \\Illuminate\\Database\\Eloquent\\Builder",
+			" */",
+			"public function scope${2:ColumnName}($query)",
+			"{",
+			"\treturn \\$query->where('${1:columnname}', '${3:condition}', '${4:value}');",
+			"}"
+		],
+		"description": "Function Apply the scope to a given column Eloquent query builder"
+	},
+	"Scope a query to only include data of a given column.": {
+		"prefix": "modeldinamicscope",
+		"body": [
+			"/**",
+			" * Scope a query to only include data of a given ${1:column_name}.",
+			" *",
+			" * @param  \\Illuminate\\Database\\Eloquent\\Builder  $query",
+			" * @param  mixed  $${1:column_name}",
+			" * @return \\Illuminate\\Database\\Eloquent\\Builder",
+			"*/",
+			"public function scopeOfType($query, $${1:column_name})",
+			"{",
+			"\treturn \\$query->where('${1:column_name}', $${1:column_name});",
+			"}"
+		],
+		"description": "Scope a query to only include data of a given column"
+	},
+	"The event map for the model,": {
+		"prefix": "modelevent",
+		"body": [
+			"/**",
+			" * The event map for the model.",
+			" *",
+			" * @var array",
+			" */",
+			"protected \\$dispatchesEvents = [",
+			"\t// events $0",
+			"];"
+		],
+		"description": "The event map for the model,"
+	},
+	"Handle events after all transactions are committed.": {
+		"prefix": "modelcomitted",
+		"body": [
+			"/**",
+			" * Handle events after all transactions are committed.",
+			" *",
+			" * @var bool",
+			" */",
+			"public \\$afterCommit = ${1:true};"
+		],
+		"description": "Handle events after all transactions are committed."
+	},
+	"Get the given column associated with the this model.": {
+		"prefix": "hasOne",
+		"body": [
+			"/**",
+			" * Get the ${1:column_name} associated with the this model.",
+			" */",
+			"public function ${1:column_name}()",
+			"{",
+			"\treturn \\$this->hasOne(${2:ClassName}::class, '${3:foreign_key}', '${4:local_key}');",
+			"}"
+		],
+		"description": "Get the given column associated with the this model."
+	},
+	"Get has many relations.": {
+		"prefix": "hasMany",
+		"body": [
+			"/**",
+			" * Get the ${1:column_name}s for the current model.",
+			" */",
+			"public function ${1:column_name}s()",
+			"{",
+			"\treturn \\$this->hasMany(${2:ClassName}::class, '${3:foreign_key}', '${4:local_key}');",
+			"}"
+		],
+		"description": "Get the comments for the current model."
+	},
+	"Get the given column that owns the data.": {
+		"prefix": "belongsTo",
+		"body": [
+			"/**",
+			" * Get the ${1:column_name} that owns the data.",
+			" */",
+			"public function ${1:column_name}()",
+			"{",
+			"\treturn \\$this->belongsTo(${2:ClassName}::class, '${3:foreign_key}', '${4:owner_key}');",
+			"}"
+		],
+		"description": "Get the given column owns the data."
+	},
+	"Get the given column associated with this model that own the data.": {
+		"prefix": "hasoOneThrough",
+		"body": [
+			"/**",
+			" * Get the ${1:column_name}'s ${2:TargetClass}.",
+			" */",
+			"public function ${1:column_name}${2:TargetClass}()",
+			"{",
+			"\treturn \\$this->hasOneThrough(${2:TargetClass}::class, ${3:TargetSecondClass}::class, '${4:first_id}', '${5:second_id}', '${6:id}', '${7:id}');$0",
+			"}"
+		],
+		"description": "Get the given column associated with this model that own the data."
+	},
+	"Relationship provides a convenient way to access distant relations via an intermediate relation.": {
+		"prefix": "hasManyThrough",
+		"body": [
+			"/**",
+			" * Get all of the ${1:column_name}s for the current model.",
+			" */",
+			"public function ${1:column_name}s()",
+			"{",
+			"\treturn \\$this->hasManyThrough(${2:ClassName}::class, ${3:ClassName}::class, '${4:first_id}', '${5:second_id}', '${6:id}', , '${7:id}');",
+			"}"
+		],
+		"description": "Relationship provides a convenient way to access distant relations via an intermediate relation."
+	},
+	"get the given column name has many relation": {
+		"prefix": "belongsToMany",
+		"body": [
+			"/**",
+			" * The ${1:column_name}s that belong to the current model.",
+			" */",
+			"public function ${1:column_name}s()",
+			"{",
+			"\treturn \\$this->belongsToMany(${2:ClassName::class);",
+			"}"
+		],
+		"description": "get the given column name has many relation."
+	},
+	"Relations with default value as array.": {
+		"prefix": "withdefaultarr",
+		"body": [
+			"->withDefault([",
+			"\t'${1:column_name}' => \"${4:${3:column_name} does't exist.}\",",
+			"]);"
+		],
+		"description": "Relations with default value as array."
+	},
+	"Relations with default value as function.": {
+		"prefix": "withdefaultfunc",
+		"body": [
+			"->withDefault(function ($${1:target}, $${2:current}) {",
+			"\t$${1:target}->${3:column_name} = \"${4:${3:column_name} does't exist.}\";",
+			"});"
+		],
+		"description": "Relations with default value as function."
+	},
+	"Relations with default value as arrow function.": {
+		"prefix": "withdefaultarrfunc",
+		"body": [
+			"->withDefault(fn ($${1:target}, $${2:current}) => $${1:target}->${3:column_name} = \"${4:${3:column_name} does't exist.}\" );"
+		],
+		"description": "Relations with default value as arrow function."
+	},
+	"Relations latest of many.": {
+		"prefix": "lastofmany",
+		"body": ["->latestOfMany();"],
+		"description": "Relations latest of many."
+	},
+	"Relations oldest of many.": {
+		"prefix": "oldofmany",
+		"body": ["->oldestOfMany();"],
+		"description": "Relations oldest of many."
+	},
+	"with pivot.": {
+		"prefix": "withpivot",
+		"body": ["->withPivot('${1:column_name}');"],
+		"description": "with pivot."
+	},
+	"with timestamp.": {
+		"prefix": "withtimestamp",
+		"body": ["->withTimestamps();"],
+		"description": "with timestamp."
+	}
+
+	// ! /LARAVEL MODEL =================================================================================================================
+	// * / LARAVEL =================================================================================================================
 }
