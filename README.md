@@ -1,6 +1,6 @@
 # my vscode setup
 
 - extension list
-- php snipper
+- php snippet
 - javascript snippet
 - my setting.json file

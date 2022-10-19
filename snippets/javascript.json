@@ -40,13 +40,13 @@
 	"Map arrow function": {
 		"prefix": ["mapdata", "map"],
 		"description": "Map function",
-		"body": [".map(($data, $index) => {", "\tlet $data;", "});"]
+		"body": ["map(($data, $index) => {", "\tlet $data;", "});"]
 	},
 	"Reduce arrow function": {
 		"prefix": ["reducedata", "reduce"],
 		"description": "Reducer function",
 		"body": [
-			".reduce(($1total, $2data) => {",
+			"reduce(($1total, $2data) => {",
 			"\treturn $1total += $2data;",
 			"}, $3startfrom);"
 		]
@@ -55,10 +55,120 @@
 		"prefix": ["filterdata", "filter"],
 		"description": "Filter array",
 		"body": [
-			".filter(($1element, $2index) => {",
+			"filter(($1element, $2index) => {",
 			"\t // your filter $3",
 			"}, $3callBack);"
 		]
-	}
+	},
 	// * / END ARRAY FUNCTION ======================================================================================================
+	// *  CONSOLE SNIPPERS  ======================================================================================================
+	"console.log()": {
+		"prefix": ["log"],
+		"description": "console log",
+		"body": [
+			"console.log('==============================');",
+			"console.log(${1});",
+			"console.log('==============================');"
+		]
+	},
+	"console.info()": {
+		"prefix": ["info"],
+		"description": "console info",
+		"body": [
+			"console.log('==============================');",
+			"console.info(${1});",
+			"console.log('==============================');"
+		]
+	},
+	"console.table()": {
+		"prefix": ["table"],
+		"description": "console table",
+		"body": [
+			"console.log('==============================');",
+			"console.table(${1});",
+			"console.log('==============================');"
+		]
+	},
+	"console.warn()": {
+		"prefix": ["warn"],
+		"description": "console warn",
+		"body": [
+			"console.log('==============================');",
+			"console.warn(${1});",
+			"console.log('==============================');"
+		]
+	},
+	"console.count()": {
+		"prefix": ["count"],
+		"description": "console count",
+		"body": [
+			"console.log('==============================');",
+			"console.count(${1});",
+			"console.log('==============================');"
+		]
+	},
+	"console.assert()": {
+		"prefix": ["assert"],
+		"description": "console assert",
+		"body": [
+			"console.log('==============================');",
+			"console.assert(${1});",
+			"console.log('==============================');"
+		]
+	},
+	"console.time()": {
+		"prefix": ["time"],
+		"description": "console time",
+		"body": [
+			"console.log('==============================');",
+			"console.time(${1});",
+			"console.log('==============================');"
+		]
+	},
+	"console.timeLog()": {
+		"prefix": ["timeLog"],
+		"description": "console timeLog",
+		"body": [
+			"console.log('==============================');",
+			"console.timeLog(${1});",
+			"console.log('==============================');"
+		]
+	},
+	"console.trace()": {
+		"prefix": ["trace"],
+		"description": "console trace",
+		"body": [
+			"console.log('==============================');",
+			"console.trace(${1});",
+			"console.log('==============================');"
+		]
+	},
+	"console.group()": {
+		"prefix": ["group"],
+		"description": "console group",
+		"body": [
+			"console.log('==============================');",
+			"console.group(${1});",
+			"console.log('==============================');"
+		]
+	},
+	"console.groupCollapsed()": {
+		"prefix": ["groupCollapsed"],
+		"description": "console groupCollapsed",
+		"body": [
+			"console.log('==============================');",
+			"console.groupCollapsed(${1});",
+			"console.log('==============================');"
+		]
+	},
+	"console.groupEnd()": {
+		"prefix": ["groupEnd"],
+		"description": "console groupEnd",
+		"body": [
+			"console.log('==============================');",
+			"console.groupEnd(${1});",
+			"console.log('==============================');"
+		]
+	}
+	// * / CONSOLE SNIPPERS  ======================================================================================================
 }
