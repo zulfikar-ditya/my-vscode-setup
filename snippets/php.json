@@ -602,7 +602,7 @@
 			" *",
 			" * @return void",
 			" */",
-			"protected function booted()",
+			"protected static function booted()",
 			"{",
 			"\t// code$1",
 			"}"
