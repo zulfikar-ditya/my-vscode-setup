@@ -1,29 +1,11 @@
 {
-	// Place your snippets for php here. Each snippet is defined under a snippet name and has a prefix, body and
-	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
-	// same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-
-	// * FUNCTION PHP =================================================================================================================
 	"public function": {
 		"prefix": "pubfunc",
 		"body": [
 			"/**",
-			" * ${1:function_name} ",
-			" * ",
-			" * @param ${2:arguments}",
-			" * @return mixed",
+			" * ${1:functionName} ",
 			" */",
-			"public function ${1:function_name}(${2:arguments})",
+			"public function ${1:functionName}(${2:arguments})",
 			"{",
 			"\t${3:// body}",
 			"}"
@@ -34,12 +16,9 @@
 		"prefix": "protfunc",
 		"body": [
 			"/**",
-			" * ${1:function_name} ",
-			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * ${1:functionName} ",
 			" */",
-			"protected function ${1:function_name}(${2:arguments})",
+			"protected function ${1:functionName}(${2:arguments})",
 			"{",
 			"\t${3:// body}",
 			"}"
@@ -47,29 +26,23 @@
 		"description": "Protected function"
 	},
 	"private function": {
-		"prefix": "protfunc",
+		"prefix": "privfunc",
 		"body": [
 			"/**",
-			" * ${1:function_name} ",
-			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * ${1:functionName} ",
 			" */",
-			"private function ${1:function_name}(${2:arguments})",
+			"private function ${1:functionName}(${2:arguments})",
 			"{",
 			"\t${3:// body}",
 			"}"
 		],
 		"description": "Private function"
 	},
-	"__construct": {
+	"Class Constructor": {
 		"prefix": "__const",
 		"body": [
 			"/**",
-			" * initial",
-			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * Instantiate a new {$1:ClassName} instance.",
 			" */",
 			"public function __construct(${2:arguments})",
 			"{",
@@ -78,14 +51,11 @@
 		],
 		"description": "Constructor function"
 	},
-	"__destruct": {
+	"Class Destructor": {
 		"prefix": "__destruct",
 		"body": [
 			"/**",
-			" * destructor",
-			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * Destructor of {$1:ClassName} instance.",
 			" */",
 			"public function __destruct(${2:arguments})",
 			"{",
@@ -98,12 +68,9 @@
 		"prefix": "pubfuncget",
 		"body": [
 			"/**",
-			" * get property ${1:property}",
-			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * Get property ${1:propertyName}",
 			" */",
-			"public function get${1:property}(${2:arguments})",
+			"public function get${1:propertyName}(${2:arguments})",
 			"{",
 			"\t${3:// body}",
 			"}"
@@ -114,12 +81,9 @@
 		"prefix": "pubfuncset",
 		"body": [
 			"/**",
-			" * set property ${1:property}",
-			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * Set property ${1:propertyName}",
 			" */",
-			"public function set${1:property}(${2:arguments})",
+			"public function set${1:propertyName}(${2:arguments})",
 			"{",
 			"\t${3:// body}",
 			"}"
@@ -130,12 +94,9 @@
 		"prefix": "prifuncget",
 		"body": [
 			"/**",
-			" * get property ${1:property}",
-			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * get property ${1:propertyName}",
 			" */",
-			"private function get${1:property}(${2:arguments})",
+			"private function get${1:propertyName}(${2:arguments})",
 			"{",
 			"\t${3:// body}",
 			"}"
@@ -146,12 +107,9 @@
 		"prefix": "prifuncset",
 		"body": [
 			"/**",
-			" * set property ${1:property}",
-			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * set property ${1:propertyName}",
 			" */",
-			"private function set${1:property}(${2:arguments})",
+			"private function set${1:propertyName}(${2:arguments})",
 			"{",
 			"\t${3:// body}",
 			"}"
@@ -162,12 +120,9 @@
 		"prefix": "profuncget",
 		"body": [
 			"/**",
-			" * get property ${1:property}",
-			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * get property ${1:propertyName}",
 			" */",
-			"protected function get${1:property}(${2:arguments})",
+			"protected function get${1:propertyName}(${2:arguments})",
 			"{",
 			"\t${3:// body}",
 			"}"
@@ -178,12 +133,9 @@
 		"prefix": "profuncset",
 		"body": [
 			"/**",
-			" * set property ${1:property}",
-			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * set property ${1:propertyName}",
 			" */",
-			"protected function set${1:property}(${2:arguments})",
+			"protected function set${1:propertyName}(${2:arguments})",
 			"{",
 			"\t${3:// body}",
 			"}"
@@ -194,12 +146,9 @@
 		"prefix": "profuncstatic",
 		"body": [
 			"/**",
-			" * ${1:function_name}",
-			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * ${1:functionName}",
 			" */",
-			"protected static function ${1:function_name}(${2:arguments})",
+			"protected static function ${1:functionName}(${2:arguments})",
 			"{",
 			"\t${3:// body}",
 			"}"
@@ -210,12 +159,9 @@
 		"prefix": "pubfuncstatic",
 		"body": [
 			"/**",
-			" * ${1:function_name}",
-			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * ${1:functionName}",
 			" */",
-			"public static function ${1:function_name}(${2:arguments})",
+			"public static function ${1:functionName}(${2:arguments})",
 			"{",
 			"\t${3:// body}",
 			"}"
@@ -226,12 +172,9 @@
 		"prefix": "prifuncstatic",
 		"body": [
 			"/**",
-			" * ${1:function_name}",
-			" * ",
-			" * @param ${1:arguments}",
-			" * @return ${2:arguments}",
+			" * ${1:functionName}",
 			" */",
-			"private static function ${1:function_name}(${2:arguments})",
+			"private static function ${1:functionName}(${2:arguments})",
 			"{",
 			"\t${3:// body}",
 			"}"
@@ -248,18 +191,14 @@
 		"body": ["fn (${1:arguments}) => ${2:code}"],
 		"description": "Arrow function"
 	},
-	// * / END FUNCTION PHP =================================================================================================================
 
-	// * VARIABLE =================================================================================================================
 	"variable string": {
 		"prefix": "varstr",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var string",
+			" * ${1:variableName}",
 			" */",
-			"$${1:variable_name} = \"${2:value}\";"
+			"$${1:variableName} = \"${2:value}\";"
 		],
 		"description": "Variable string"
 	},
@@ -267,11 +206,9 @@
 		"prefix": "varint",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var int",
+			" * ${1:variableName}",
 			" */",
-			"$${1:variable_name} = ${2:value};"
+			"$${1:variableName} = ${2:value};"
 		],
 		"description": "Variable int"
 	},
@@ -279,11 +216,9 @@
 		"prefix": "varbool",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var boolean",
+			" * ${1:variableName}",
 			" */",
-			"$${1:variable_name} = ${2:true};"
+			"$${1:variableName} = ${2:true};"
 		],
 		"description": "Variable boolean"
 	},
@@ -291,11 +226,9 @@
 		"prefix": "varfloat",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var float",
+			" * ${1:variableName}",
 			" */",
-			"$${1:variable_name} = ${2:0.0};"
+			"$${1:variableName} = ${2:0.0};"
 		],
 		"description": "Variable float"
 	},
@@ -303,11 +236,9 @@
 		"prefix": "vararr",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var array",
+			" * ${1:variableName}",
 			" */",
-			"$${1:variable_name} = [${2:values}];"
+			"$${1:variableName} = [${2:values}];"
 		],
 		"description": "Variable array"
 	},
@@ -315,11 +246,9 @@
 		"prefix": "varobj",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var object",
+			" * ${1:variableName}",
 			" */",
-			"{1:variable_name} = {${2:values}};"
+			"{1:variableName} = {${2:values}};"
 		],
 		"description": "Variable array"
 	},
@@ -328,11 +257,9 @@
 		"prefix": "pubvarstr",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var string",
+			" * ${1:variableName}",
 			" */",
-			"public $${1:variable_name} = \"${2:value}\";"
+			"public string $${1:variableName} = \"${2:value}\";"
 		],
 		"description": "Public variable string"
 	},
@@ -340,11 +267,9 @@
 		"prefix": "pubvarint",
 		"body": [
 			"/**",
-			" *",
-			" * 1",
-			" * @var int",
+			" * ${1:variableName}",
 			" */",
-			"public $${1:variable_name} = ${2:value};"
+			"public int $${1:variableName} = ${2:value};"
 		],
 		"description": "Public variable int"
 	},
@@ -352,11 +277,9 @@
 		"prefix": "pubvarbool",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var boolean",
+			" * ${1:variableName}",
 			" */",
-			"public $${1:variable_name} = ${2:true};"
+			"public bool $${1:variableName} = ${2:true};"
 		],
 		"description": "Public variable boolean"
 	},
@@ -364,11 +287,9 @@
 		"prefix": "pubvarfloat",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var float",
+			" * ${1:variableName}",
 			" */",
-			"public $${1:variable_name} = ${2:0.0};"
+			"public floar $${1:variableName} = ${2:0.0};"
 		],
 		"description": "Public variable float"
 	},
@@ -376,11 +297,9 @@
 		"prefix": "pubvararr",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var array",
+			" * ${1:variableName}",
 			" */",
-			"public $${1:variable_name} = [${2:values}];"
+			"public array $${1:variableName} = [${2:values}];"
 		],
 		"description": "Public variable array"
 	},
@@ -388,11 +307,9 @@
 		"prefix": "pubvarobj",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var object",
+			" * ${1:variableName}",
 			" */",
-			"public $${1:variable_name} = {${2:values}};"
+			"public $${1:variableName} = {${2:values}};"
 		],
 		"description": "Public variable array"
 	},
@@ -400,11 +317,9 @@
 		"prefix": "privarstr",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var string",
+			" * ${1:variableName}",
 			" */",
-			"private $${1:variable_name} = \"${2:value}\";"
+			"private string $${1:variableName} = \"${2:value}\";"
 		],
 		"description": "private variable string"
 	},
@@ -412,11 +327,9 @@
 		"prefix": "privarint",
 		"body": [
 			"/**",
-			" *",
-			" * $${",
 			" * @var int",
 			" */",
-			"private $${1:variable_name} = ${2:value};"
+			"private int $${1:variableName} = ${2:value};"
 		],
 		"description": "private variable int"
 	},
@@ -424,11 +337,9 @@
 		"prefix": "privarbool",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var boolean",
+			" * ${1:variableName}",
 			" */",
-			"private $${1:variable_name} = ${2:true};"
+			"private bool $${1:variableName} = ${2:true};"
 		],
 		"description": "private variable boolean"
 	},
@@ -436,11 +347,9 @@
 		"prefix": "privarfloat",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var float",
+			" * ${1:variableName}",
 			" */",
-			"private $${1:variable_name} = ${2:0.0};"
+			"private float $${1:variableName} = ${2:0.0};"
 		],
 		"description": "private variable float"
 	},
@@ -448,11 +357,9 @@
 		"prefix": "privararr",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var array",
+			" * ${1:variableName}",
 			" */",
-			"private $${1:variable_name} = [${2:values}];"
+			"private array $${1:variableName} = [${2:values}];"
 		],
 		"description": "private variable array"
 	},
@@ -460,11 +367,9 @@
 		"prefix": "privarobj",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var object",
+			" * ${1:variableName}",
 			" */",
-			"private $${1:variable_name} = {${2:values}};"
+			"private object $${1:variableName} = {${2:values}};"
 		],
 		"description": "private variable array"
 	},
@@ -472,11 +377,9 @@
 		"prefix": "provarstr",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var variable",
+			" * ${1:variableName}",
 			" */",
-			"protected $${1:variable_name} = \"${2:value}\";"
+			"protected string $${1:variableName} = \"${2:value}\";"
 		],
 		"description": "Protected variable string"
 	},
@@ -484,11 +387,9 @@
 		"prefix": "provarint",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var variable",
+			" * ${1:variableName}",
 			" */",
-			"protected $${1:variable_name} = ${2:value};"
+			"protected int $${1:variableName} = ${2:value};"
 		],
 		"description": "Protected variable int"
 	},
@@ -496,11 +397,9 @@
 		"prefix": "provarbool",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var variable",
+			" * ${1:variableName}",
 			" */",
-			"protected $${1:variable_name} = ${2:true};"
+			"protected bool $${1:variableName} = ${2:true};"
 		],
 		"description": "Protected variable boolean"
 	},
@@ -508,11 +407,9 @@
 		"prefix": "provarfloat",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var variable",
+			" * ${1:variableName}",
 			" */",
-			"protected $${1:variable_name} = ${2:0.0};"
+			"protected float $${1:variableName} = ${2:0.0};"
 		],
 		"description": "Protected variable float"
 	},
@@ -520,11 +417,9 @@
 		"prefix": "provararr",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var variable",
+			" * ${1:variableName}",
 			" */",
-			"protected $${1:variable_name} = [${2:values}];"
+			"protected array $${1:variableName} = [${2:values}];"
 		],
 		"description": "Protected variable array"
 	},
@@ -532,28 +427,20 @@
 		"prefix": "provarobj",
 		"body": [
 			"/**",
-			" *",
-			" * variable_name",
-			" * @var variable",
+			" * ${1:variableName}",
 			" */",
-			"protected $${1:variable_name} = {${2:values}};"
+			"protected object $${1:variableName} = {${2:values}};"
 		],
 		"description": "Protected variable array"
 	},
-	// * / VARIABLE =================================================================================================================
-
-	// * LARAVEL =================================================================================================================
-	// ! LARAVEL MODEL =================================================================================================================
 
 	"The table associated with the model": {
 		"prefix": "modeltablename",
 		"body": [
 			"/**",
 			" * The table associated with the model.",
-			" *",
-			" * @var string",
 			" */",
-			"protected \\$table = \"${1:table_names}\";"
+			"protected string \\$table = \"${1:table_names}\";"
 		],
 		"description": "Function the table associated with the model"
 	},
@@ -563,10 +450,8 @@
 		"body": [
 			"/**",
 			" * The primary key associated with the table.",
-			" *",
-			" * @var string",
 			" */",
-			"protected \\$primaryKey = \"${1:table_id}\";"
+			"protected string \\$primaryKey = \"${1:table_id}\";"
 		],
 		"description": "Function the primary key associated with the table."
 	},
@@ -575,10 +460,8 @@
 		"body": [
 			"/**",
 			" * The model's default values for attributes.",
-			" *",
-			" * @var array",
 			" */",
-			"protected \\$attributes = [$1];"
+			"protected array \\$attributes = [$1];"
 		],
 		"description": "Function the model's default values for attributes."
 	},
@@ -587,20 +470,26 @@
 		"body": [
 			"/**",
 			" * The attributes that are mass assignable.",
-			" *",
-			" * @var array",
 			" */",
-			"protected \\$fillable = [$1];"
+			"protected array \\$fillable = [$1];"
 		],
 		"description": "Function the attributes that are mass assignable."
+	},
+	"The attributes that aren't mass assignable.": {
+		"prefix": "modelguard",
+		"body": [
+			"/**",
+			"* The attributes that aren't mass assignable.",
+			"*/",
+			"protected array $guarded = [];"
+		],
+		"description": "Function the attributes that aren't are mass assignable."
 	},
 	"The \"booted\" method of the model.": {
 		"prefix": "modelboot",
 		"body": [
 			"/**",
 			" * The \"booted\" method of the model.",
-			" *",
-			" * @return void",
 			" */",
 			"protected static function booted()",
 			"{",
@@ -614,10 +503,6 @@
 		"body": [
 			"/**",
 			" * Apply the scope to a given Eloquent query builder.",
-			" *",
-			" * @param  \\Illuminate\\Database\\Eloquent\\Builder  $builder",
-			" * @param  \\Illuminate\\Database\\Eloquent\\Model  $model",
-			" * @return void",
 			" */",
 			"public function apply(Builder $builder, Model $model)",
 			"{",
@@ -627,17 +512,26 @@
 		"description": "Function Apply the scope to a given Eloquent query builder"
 	},
 	"Apply the scope to a given column Eloquent query builder": {
+		"prefix": "modelcast",
+		"body": [
+			"/**",
+			" * The attributes that should be cast.",
+			" */",
+			"protected array \\$casts = [",
+			"\t'${1:column_name}' => '${2:cast_type}',",
+			"];"
+		],
+		"description": "Function Apply the scope to a given column Eloquent query builder"
+	},
+	"Laravel Eloquent model casting": {
 		"prefix": "modellocalscope",
 		"body": [
 			"/**",
-			" * Scope a query to only include ${1:column_name} data.",
-			" *",
-			" * @param  \\Illuminate\\Database\\Eloquent\\Builder  $query",
-			" * @return \\Illuminate\\Database\\Eloquent\\Builder",
+			" * Scope a query to only include ${1:ColumnName} data.",
 			" */",
-			"public function scope${2:ColumnName}($query)",
+			"public function scope${2:columnName}($query): \\Illuminate\\Database\\Eloquent\\Builder",
 			"{",
-			"\treturn \\$query->where('${1:columnname}', '${3:condition}', '${4:value}');",
+			"\treturn \\$query->where('${1:columnName}', '${3:condition}', '${4:value}');",
 			"}"
 		],
 		"description": "Function Apply the scope to a given column Eloquent query builder"
@@ -647,12 +541,8 @@
 		"body": [
 			"/**",
 			" * Scope a query to only include data of a given ${1:column_name}.",
-			" *",
-			" * @param  \\Illuminate\\Database\\Eloquent\\Builder  $query",
-			" * @param  mixed  $${1:column_name}",
-			" * @return \\Illuminate\\Database\\Eloquent\\Builder",
 			"*/",
-			"public function scopeOfType($query, $${1:column_name})",
+			"public function scopeOfType($query, $${1:column_name}): \\Illuminate\\Database\\Eloquent\\Builder",
 			"{",
 			"\treturn \\$query->where('${1:column_name}', $${1:column_name});",
 			"}"
@@ -664,24 +554,30 @@
 		"body": [
 			"/**",
 			" * The event map for the model.",
-			" *",
-			" * @var array",
 			" */",
-			"protected \\$dispatchesEvents = [",
+			"protected array \\$dispatchesEvents = [",
 			"\t// events $0",
 			"];"
 		],
 		"description": "The event map for the model,"
+	},
+	"timestamp,": {
+		"prefix": "modeltimestamp",
+		"body": [
+			"/**",
+			" * Indicates if the model should be timestamped.",
+			" */",
+			"protected bool \\$timestamps  = ${1:true};"
+		],
+		"description": "model timestamps,"
 	},
 	"Handle events after all transactions are committed.": {
 		"prefix": "modelcomitted",
 		"body": [
 			"/**",
 			" * Handle events after all transactions are committed.",
-			" *",
-			" * @var bool",
 			" */",
-			"public \\$afterCommit = ${1:true};"
+			"public bool \\$afterCommit = ${1:true};"
 		],
 		"description": "Handle events after all transactions are committed."
 	},
@@ -691,7 +587,7 @@
 			"/**",
 			" * Get the ${1:column_name} associated with the this model.",
 			" */",
-			"public function ${1:column_name}()",
+			"public function ${1:column_name}(): hasOne",
 			"{",
 			"\treturn \\$this->hasOne(${2:ClassName}::class, '${3:foreign_key}', '${4:local_key}');",
 			"}"
@@ -704,7 +600,7 @@
 			"/**",
 			" * Get the ${1:column_name}s for the current model.",
 			" */",
-			"public function ${1:column_name}s()",
+			"public function ${1:column_name}s(): hasMany",
 			"{",
 			"\treturn \\$this->hasMany(${2:ClassName}::class, '${3:foreign_key}', '${4:local_key}');",
 			"}"
@@ -717,7 +613,7 @@
 			"/**",
 			" * Get the ${1:column_name} that owns the data.",
 			" */",
-			"public function ${1:column_name}()",
+			"public function ${1:column_name}(): belongsTo",
 			"{",
 			"\treturn \\$this->belongsTo(${2:ClassName}::class, '${3:foreign_key}', '${4:owner_key}');",
 			"}"
@@ -807,8 +703,45 @@
 		"prefix": "withtimestamp",
 		"body": ["->withTimestamps();"],
 		"description": "with timestamp."
+	},
+	"log option.": {
+		"prefix": "logopt",
+		"body": [
+			"/**",
+			" * init activity logs",
+			" */",
+			"public function getActivitylogOptions(): LogOptions${1}",
+			"{",
+			"\treturn LogOptions::defaults()",
+			"\t\t->logAll()",
+			"\t\t->logOnlyDirty()",
+			"\t\t->dontLogIfAttributesChangedOnly(['created_at', 'updated_at'])",
+			"\t\t->setDescriptionForEvent(fn (string \\$eventName) => \"This data has been {\\$eventName}\")",
+			"\t\t->dontSubmitEmptyLogs();",
+			"}"
+		],
+		"description": "with timestamp."
+	},
+	"Std class.": {
+		"prefix": "varstd",
+		"body": [
+			"/**",
+			" * ${1:variableName}",
+			" */",
+			"$${1:variableName} = new \\stdClass;"
+		],
+		"description": "Variable std class."
+	},
+	"The model observers for your application.": {
+		"prefix": "modelobs",
+		"body": [
+			"/**",
+			"* The model observers for your application.",
+			"*/",
+			"protected array $observers = [",
+			"\t${1:ClassName}::class => [${1:ClassName}Observer::class],",
+			"];"
+		],
+		"description": "The model observers for your application."
 	}
-
-	// ! /LARAVEL MODEL =================================================================================================================
-	// * / LARAVEL =================================================================================================================
 }

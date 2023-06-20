@@ -8,7 +8,7 @@
 	"git.confirmSync": false,
 	"workbench.sideBar.location": "left",
 	"php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
-	"php-cs-fixer.lastDownload": 1665652561093,
+	"php-cs-fixer.lastDownload": 1687155446443,
 	"editor.mouseWheelZoom": true,
 	"editor.fontFamily": "'Fira Code', 'Consolas', 'Ubuntu Mono', 'monospace', monospace",
 	"editor.fontLigatures": true,
@@ -21,7 +21,7 @@
 		}
 	},
 	"editor.stickyScroll.enabled": true,
-	"editor.cursorSmoothCaretAnimation": true,
+	"editor.cursorSmoothCaretAnimation": "on",
 	"prettier.trailingComma": "all",
 	"prettier.useTabs": true,
 	"prettier.vueIndentScriptAndStyle": true,
@@ -41,20 +41,17 @@
 	"editor.renderLineHighlightOnlyWhenFocus": true,
 	"editor.tabCompletion": "on",
 	"editor.autoClosingOvertype": "always",
-	"editor.formatOnPaste": true,
 	"editor.linkedEditing": true,
 	"editor.suggest.preview": true,
 	"editor.codeActionsOnSave": {},
 	"emmet.includeLanguages": {
 		"javascript": "javascriptreact"
 	},
-	"zenMode.hideLineNumbers": false,
 	"workbench.editorAssociations": {
 		"*.xlsx": "default"
 	},
 	"terminal.integrated.cursorStyle": "underline",
 	"terminal.integrated.defaultProfile.windows": "Command Prompt",
-	"editor.formatOnSave": true,
 	"editor.autoClosingDelete": "always",
 	"editor.bracketPairColorization.enabled": true,
 	"diffEditor.ignoreTrimWhitespace": false,
@@ -73,6 +70,16 @@
 		"editor.formatOnPaste": true
 	},
 	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true
+	},
+	"[tsx]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true
+	},
+	"[jsx]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.formatOnSave": true,
 		"editor.formatOnPaste": true
@@ -138,8 +145,6 @@
 	"php-cs-fixer.formatHtml": false,
 	"php-cs-fixer.documentFormattingProvider": true,
 	"terminal.integrated.enableMultiLinePasteWarning": false,
-	"zenMode.hideActivityBar": false,
-	"zenMode.hideStatusBar": false,
 	"bladeFormatter.format.indentSize": 4,
 	"editor.inlineSuggest.enabled": true,
 	"workbench.editor.untitled.hint": "hidden",
@@ -157,5 +162,137 @@
 			"query": "state:open repo:${owner}/${repository} sort:updated-desc"
 		}
 	],
-	"window.zoomLevel": -1
+	"security.workspace.trust.untrustedFiles": "open",
+	"template-string-converter.enable": true,
+	"template-string-converter.validLanguages": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"blade"
+	],
+	"template-string-converter.quoteType": "both",
+	"template-string-converter.autoRemoveTemplateString": true,
+	"template-string-converter.convertWithinTemplateString": true,
+	"template-string-converter.addBracketsToProps": false,
+	"template-string-converter.enabled": true,
+	"template-string-converter.convertOutermostQuotes": true,
+
+	"editor.tokenColorCustomizations": {
+		"comments": "#a5b4fc"
+	},
+
+	"better-comments.highlightPlainText": false,
+	"better-comments.multilineComments": true,
+	"better-comments.tags": [
+		{
+			"tag": "!",
+			"color": "#FF2D00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "?",
+			"color": "#f97316",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "note",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "//",
+			"color": "#474747",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "todo",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "*",
+			"color": "#98C379",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": true
+		}
+	],
+	"liveshare.presence": true,
+	"cSpell.userWords": [
+		"Activitylog",
+		"coas",
+		"Datatables",
+		"kode",
+		"Laravel",
+		"Protone",
+		"Spatie",
+		"splade"
+	],
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"githubPullRequests.pullBranch": "never",
+	"terminal.integrated.profiles.windows": {
+		"PowerShell": {
+			"source": "PowerShell",
+			"icon": "terminal-powershell"
+		},
+		"Command Prompt": {
+			"path": [
+				"${env:windir}\\Sysnative\\cmd.exe",
+				"${env:windir}\\System32\\cmd.exe"
+			],
+			"args": [],
+			"icon": "terminal-cmd"
+		},
+		"Git Bash": {
+			"source": "Git Bash"
+		},
+		"Windows PowerShell": {
+			"path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+		}
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": false,
+		"markdown": false,
+		"scminput": false
+	},
+	"files.readonlyInclude": {
+		// "/vendor/*": true,
+		// "node_modules": true,
+		// ".vscode": true,
+		// "LICENSE": true,
+		// "package.json": true,
+		// "composer.json": true
+	},
+	"markdown.editor.drop.copyIntoWorkspace": "mediaFiles",
+	"markdown.editor.filePaste.copyIntoWorkspace": "mediaFiles",
+	"chat.experimental.quickQuestion.enable": true
 }
