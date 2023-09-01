@@ -419,7 +419,7 @@
 			"/**",
 			" * ${1:variableName}",
 			" */",
-			"protected array $${1:variableName} = [${2:values}];"
+			"protected $${1:variableName} = [${2:values}];"
 		],
 		"description": "Protected variable array"
 	},
@@ -440,7 +440,7 @@
 			"/**",
 			" * The table associated with the model.",
 			" */",
-			"protected string \\$table = \"${1:table_names}\";"
+			"protected \\$table = \"${1:table_names}\";"
 		],
 		"description": "Function the table associated with the model"
 	},
@@ -451,7 +451,7 @@
 			"/**",
 			" * The primary key associated with the table.",
 			" */",
-			"protected string \\$primaryKey = \"${1:table_id}\";"
+			"protected \\$primaryKey = \"${1:table_id}\";"
 		],
 		"description": "Function the primary key associated with the table."
 	},
@@ -461,7 +461,7 @@
 			"/**",
 			" * The model's default values for attributes.",
 			" */",
-			"protected array \\$attributes = [$1];"
+			"protected \\$attributes = [$1];"
 		],
 		"description": "Function the model's default values for attributes."
 	},
@@ -471,7 +471,7 @@
 			"/**",
 			" * The attributes that are mass assignable.",
 			" */",
-			"protected array \\$fillable = [$1];"
+			"protected \\$fillable = [$1];"
 		],
 		"description": "Function the attributes that are mass assignable."
 	},
@@ -481,7 +481,7 @@
 			"/**",
 			"* The attributes that aren't mass assignable.",
 			"*/",
-			"protected array $guarded = [];"
+			"protected $guarded = [];"
 		],
 		"description": "Function the attributes that aren't are mass assignable."
 	},
@@ -517,7 +517,7 @@
 			"/**",
 			" * The attributes that should be cast.",
 			" */",
-			"protected array \\$casts = [",
+			"protected \\$casts = [",
 			"\t'${1:column_name}' => '${2:cast_type}',",
 			"];"
 		],
@@ -555,7 +555,7 @@
 			"/**",
 			" * The event map for the model.",
 			" */",
-			"protected array \\$dispatchesEvents = [",
+			"protected \\$dispatchesEvents = [",
 			"\t// events $0",
 			"];"
 		],
@@ -567,7 +567,7 @@
 			"/**",
 			" * Indicates if the model should be timestamped.",
 			" */",
-			"protected bool \\$timestamps  = ${1:true};"
+			"protected \\$timestamps  = ${1:true};"
 		],
 		"description": "model timestamps,"
 	},
@@ -587,7 +587,7 @@
 			"/**",
 			" * Get the ${1:column_name} associated with the this model.",
 			" */",
-			"public function ${1:column_name}(): hasOne",
+			"public function ${1:column_name}(): HasOne",
 			"{",
 			"\treturn \\$this->hasOne(${2:ClassName}::class, '${3:foreign_key}', '${4:local_key}');",
 			"}"
@@ -600,7 +600,7 @@
 			"/**",
 			" * Get the ${1:column_name}s for the current model.",
 			" */",
-			"public function ${1:column_name}s(): hasMany",
+			"public function ${1:column_name}s(): HasMany",
 			"{",
 			"\treturn \\$this->hasMany(${2:ClassName}::class, '${3:foreign_key}', '${4:local_key}');",
 			"}"
@@ -613,7 +613,7 @@
 			"/**",
 			" * Get the ${1:column_name} that owns the data.",
 			" */",
-			"public function ${1:column_name}(): belongsTo",
+			"public function ${1:column_name}(): BelongsTo",
 			"{",
 			"\treturn \\$this->belongsTo(${2:ClassName}::class, '${3:foreign_key}', '${4:owner_key}');",
 			"}"
@@ -738,10 +738,38 @@
 			"/**",
 			"* The model observers for your application.",
 			"*/",
-			"protected array $observers = [",
+			"protected $observers = [",
 			"\t${1:ClassName}::class => [${1:ClassName}Observer::class],",
 			"];"
 		],
 		"description": "The model observers for your application."
+	},
+	"Laravel public function that return json response.": {
+		"prefix": "pbj",
+		"body": [
+			//
+		],
+		"description": ""
+	},
+	"Laravel public function that return view.": {
+		"prefix": "pbv",
+		"body": [
+			//
+		],
+		"description": ""
+	},
+	"Laravel public function index().": {
+		"prefix": "pbv",
+		"body": [
+			//
+		],
+		"description": ""
+	},
+	"Laravel controller starter variable.": {
+		"prefix": "lcstart",
+		"body": [
+			//
+		],
+		"description": ""
 	}
 }
