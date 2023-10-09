@@ -455,6 +455,16 @@
 		],
 		"description": "Function the primary key associated with the table."
 	},
+	"The data type of the auto-incrementing ID.": {
+		"prefix": "modelKey",
+		"body": [
+			"/**",
+			" * The data type of the auto-incrementing ID.",
+			" */",
+			"protected \\$keyType = \"${1:string}\";"
+		],
+		"description": "The data type of the auto-incrementing ID."
+	},
 	"The model's default values for attributes.": {
 		"prefix": "modelattr",
 		"body": [
